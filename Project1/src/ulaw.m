@@ -5,4 +5,7 @@ function [z]=ulaw(y,u)
 
 % todo: 
 
+% ¦ÌÂÉº¯Êý£¨Ñ¹ËõÆ÷£©
+z = (sign(y) .* log(1 + u * abs((y / max(abs(y)))))) ./ log(1 + u);
+
 end
